@@ -1,0 +1,123 @@
+body {
+	font-family: sans-serif;
+}
+
+body,
+a {
+ color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover,
+.active {
+	/* color: yellow; */
+	background: yellow;
+	mix-blend-mode: multiply;
+}
+
+.contact-link,
+.contact-link:hover {
+	z-index: 10;
+	cursor: pointer;
+}
+
+::selection {
+	background: blue;
+	mix-blend-mode: multiply;
+}
+
+.display {
+	display: none;
+}
+
+.site-title {
+	font-size: 6.5vh;
+	text-transform: uppercase;
+}
+
+.site-projects {
+	font-size: 2.5vh;
+	width: 60vw;
+	margin-left: 37.5vw;
+	margin-right: 35px;
+	margin-top: 25px;
+}
+
+.fixed {
+	position: fixed;
+	left: 35px;
+	top: 25px;
+}
+
+.site-icon {
+	bottom: 0;
+	padding-bottom: 25px;
+	position: absolute;
+	width: 100vw;
+}
+
+.site-icon:hover {
+	cursor: url(../assets/about.png),pointer;
+	opacity: 0.5;
+  display: block;
+}
+
+.site-info:hover {
+	cursor: url(../assets/close.png),pointer;
+  display: block;
+}
+
+.icon-container {
+	margin: 0 auto;
+	width: 30px;
+}
+
+.site-info {
+	background: yellow;
+	bottom: 0;
+	font-size: 7vh;
+	line-height: 1.25;
+	padding: 35px;
+	position: fixed;
+	mix-blend-mode: multiply;
+	z-index: 10;
+	transition: 0.5s;
+}
+
+.site-contact {
+	font-size: 2.5vh;
+	line-height: initial;
+	margin-top: 35px;
+}
+
+.site-close {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10
+}
+
+.project-preview {
+	top: 18vh;
+	position: absolute;
+}
+
+.project-preview img {
+	mix-blend-mode: multiply;
+	z-index: 10;
+}
+
+.project-preview img:hover {
+	cursor: url(../assets/open.png),pointer;
+  display: block;
+}
+
+/* .active:hover {
+	cursor: url(../assets/close.png),pointer;
+  display: inline-block;
+} */
