@@ -35,7 +35,8 @@ $('.site-info').on('click', function() {
   }
 });
 
-$('a.project-link').on('click', function(e) {
+//Hover Event로 작성 (수정)
+$('a.project-link').hover(function (e){
   e.preventDefault();
   var imgSrc = $(this).attr('id');
       that = $(this);
@@ -43,24 +44,70 @@ $('a.project-link').on('click', function(e) {
   if ($(this).hasClass('active')) {
     $('.project-preview img').attr('src', ' ');
     $(this).removeClass('active');
-    siteClicked = false;
   }
 
   else {
     $('a.project-link').removeClass('active');
     $(this).addClass('active');
-    setTimeout(function () {
-      siteClicked = true;
-    }, 250);
+    $('.project-preview img').attr('src', 'assets/' + imgSrc +'/' + imgSrc + '.png');
+    $('.project-preview img').attr('id', imgSrc);
+    $('.project-preview').css({
+      'left': getRandomInt(0,75) + 'vw',
+      'top': getRandomInt(20,30)/1.1 + 'vh'
+      //'border: none'
+    });
+  }
+},
+function(){
+  $('.project-preview img').attr('src', ' ');
+  $(this).removeClass('active');
+  siteInfo.css({'bottom': (-1)*infoHeight});
+  $('.site-projects, .site-icon, .project-preview img, .project-container').animate({
+      opacity: 1,
+    }, 1000, function() {
+      //done
+  });
+});
+
+
+//on Event로 작성 Code (원본)
+/*
+$('a.project-link').on('mouseover', function(e) {
+  e.preventDefault();
+  var imgSrc = $(this).attr('id');
+      that = $(this);
+
+  if ($(this).hasClass('active')) {
+    $('.project-preview img').attr('src', ' ');
+    $(this).removeClass('active');
+  }
+
+  else {
+    $('a.project-link').removeClass('active');
+    $(this).addClass('active');
 
     $('.project-preview img').attr('src', 'assets/' + imgSrc +'/' + imgSrc + '.png');
     $('.project-preview img').attr('id', imgSrc);
     $('.project-preview').css({
       'left': getRandomInt(0,75) + 'vw'
-      // 'top': getRandomInt(0,15) + 'vh'
+      //'top': getRandomInt(0,15) + 'vh'
     });
   }
 });
+
+
+$('a.project-link').on('mouseout', function() {
+  $(this).removeClass('active');
+  $('.project-preview img').empty();
+  siteInfo.css({'bottom': (-1)*infoHeight});
+  $('.site-projects, .site-icon, .project-preview img, .project-container').animate({
+      opacity: 1,
+    }, 1000, function() {
+      //done
+  });
+});
+*/
+
 
 $('.site-close').on('click', function() {
   if (siteClicked) {
