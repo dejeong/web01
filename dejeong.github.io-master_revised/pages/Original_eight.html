@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width">
   <title>Daeun Jeong</title>
   <meta name="author" content="Daeun Jeong">
-  <link rel="stylesheet" href="styles/restart.css">
-  <link rel="stylesheet" href="styles/styles-00.css">
+  <link rel="stylesheet" href="../styles/restart.css">
+  <link rel="stylesheet" href="../styles/styles-00.css">
+  <link rel="stylesheet" href="../styles/project.css">
   <style>
-    .site-projects, .site-icon, .project-preview img {
+    .site-icon {
       opacity: 0;
     }
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height:60%;
+}
+
   </style>
 </head>
 <body>
@@ -21,25 +30,17 @@
     <p>Jeong</p>
   </div>
 
-  <div class="site-projects">
-    <p>
-      <a class="project-link" id="un-expected" href="#">Un-Expected (2018)</a>,
-      <a class="project-link" id="the-society-of-visual-language" href="#">The Society of Visual Language (2018)</a>,
-      <a class="project-link" id="off-the-grid" href="#">Off The Grid (2017)</a>,
-      <a class="project-link" id="a-shape-of-emotions" href="#">A Shape of Emotions (2017)</a>,
-      <a class="project-link" id="rush-hour" href="#">Rush Hour (2017)</a>,
-      <a class="project-link" id="empty-talk" href="#">Empty Talk (2016)</a>,
-      <a class="project-link" id="eight" href="#">Eight (2016)</a>,
-      <a class="project-link" id="nine" href="#">Nine (2015)</a>,
-      <a class="project-link" id="ten" href="#">Ten (2015)</a>
-    </p>
-  </div>
 
   <div class="site-icon">
     <div class="icon-container">
-      <img id="profile" src="assets/icon-00.png">
+      <img id="profile" src="../assets/icon-00.png">
     </div>
+
   </div>
+  <!-- project content START -->
+  <img class="center" src="../assets/eight/01.jpg">
+  <!-- project content END -->
+
 
   <div class="site-info display">
     <p>
@@ -53,14 +54,10 @@
     </div>
   </div>
 
-  <div class="project-preview">
-    <img src="">
-  </div>
-
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="scripts/scripts-00.js"></script>
+  <script type="text/javascript" src="../scripts/project.js"></script>
 </body>
 </html>
