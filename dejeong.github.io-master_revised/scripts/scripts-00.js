@@ -100,7 +100,7 @@ $('.project-link').on('click', function() {
 });
 
 
-/*defailt function*/
+/*default function*/
 $('.site-icon').on('click', function(){
   siteInfo.removeClass('display');
   $('#profile').attr('src', 'assets/icon-01.png');
