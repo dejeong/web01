@@ -1,0 +1,85 @@
+/* override */
+.site-icon {
+	bottom: initial;
+	top: 25px;
+	right: 35px;
+	padding-bottom: 0;
+	position: fixed;
+	width: 55px;
+}
+
+.site-info {
+	mix-blend-mode: normal;
+}
+
+.icon-container {
+	width: 30px;
+	margin: 0;
+}
+
+.site-title:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.project-container {
+	margin: 0 35px;
+	padding-top: 50vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.project-titles {
+	font-size: 5.5vh;
+	text-transform: initial;
+	width: 50%;
+}
+
+.project-body {
+	font-size: 2.5vh;
+	display: inline-block;
+	width: 60%;
+	text-align: justify;
+}
+
+.project-body p {
+	padding: 5px 0;
+}
+
+.project-tags {
+	font-size: 3vh;
+	text-transform: none;
+	display: inline-block;
+	padding: 35px 0 15px 0;
+}
+
+.project-year {
+	font-size: 3vh;
+}
+
+.project-img {
+	margin: 60px 0 0 0;
+	max-width: 100%;
+}
+
+.project-footer {
+	width: 100%;
+}
+
+.project-counter {
+	font-size: 6.5vh;
+	margin: 70px 0 210px 0;
+}
+
+.project-counter,
+.project-credits {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.project-credits {
+	font-size: 2vh;
+	margin: 210px 0 35px;
+}
